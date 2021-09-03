@@ -10,7 +10,7 @@ public class Utils {
     public String readFileProperties(String property){
         String propertyUse = "";
         try {
-            FileInputStream fis = new FileInputStream("C:\\Users\\uilia\\IdeaProjects\\FrontGradle\\app\\src\\test\\resources\\config.properties"); //Change the path to your ChromeDriver.exe
+            FileInputStream fis = new FileInputStream("resources/config.properties"); //Change the path to your ChromeDriver.exe
             Properties prop = new Properties();
             prop.load(fis);
             propertyUse = prop.getProperty(property);
