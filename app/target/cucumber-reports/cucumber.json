@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-03T21:15:30.957Z",
+        "line": 4,
+        "name": "Search in google",
+        "description": "",
+        "id": "first-search-in-google;search-in-google",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3508437000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the access to google",
+            "match": {
+              "location": "steps.TestSteps.accessGoogle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2309342200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I type \"Automation test\" in input",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Automation test\"",
+                  "offset": 7
+                }
+              ],
+              "location": "steps.TestSteps.typeInput(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4206855300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I will be redirected to the Search page",
+            "match": {
+              "location": "steps.TestSteps.redirectedSearchPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "First search in google",
+    "description": "",
+    "id": "first-search-in-google",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/test.feature",
+    "tags": []
+  }
+]
